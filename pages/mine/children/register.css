@@ -1,0 +1,118 @@
+.content {
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+	}
+	.header {
+		width:161upx;
+		height:161upx;
+		background:rgba(63,205,235,1);
+		box-shadow:0upx 12upx 13upx 0upx rgba(63,205,235,0.47);
+		border-radius:50%;
+		margin-top: 30upx;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header image{
+		width:161upx;
+		height:161upx;
+		border-radius:50%;
+	}
+	
+	.list {
+		display: flex;
+		flex-direction: column;
+		padding-top: 0upx;
+		padding-left: 70upx;
+		padding-right: 70upx;
+		background-color: #FFFFFF;
+		margin: 0 50upx;
+		border-radius: 10rpx;
+		margin-top: 170upx;
+	}
+	.list-call{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 100upx;
+		color: #333333;
+		border-bottom: 1upx solid rgba(230,230,230,1);
+	}
+	.list-call .img{
+		width: 40upx;
+		height: 40upx;
+	}
+	.list-call .biaoti{
+		flex: 1;
+		text-align: left;
+		font-size: 32upx;
+		line-height: 100upx;
+		margin-left: 16upx;
+	}
+	.yzm {
+		color: #333333;
+		font-size: 24upx;
+		line-height: 64upx;
+		padding-left: 10upx;
+		padding-right: 10upx;
+		width:auto;
+		height:64upx;
+		border:1upx solid #333333;
+		border-radius: 50upx;
+	}
+	.yzms {
+		color: #999999 !important;
+		border:1upx solid #999999;
+	}
+	.dlbutton {
+		color: #FFFFFF;
+		font-size: 34upx;
+		width:85%;
+		height:100upx;
+		background:linear-gradient(-45deg,#4adfff,#6fffff);
+		/* box-shadow:0upx 0upx 13upx 0upx rgba(164,217,228,0.2); */
+		border-radius:50upx;
+		line-height: 100upx;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100upx;
+	}
+	.dlbutton-hover {
+		background:linear-gradient(#4adfff);
+	}
+	
+	.dlbutton-none {
+		color: #FFFFFF;
+		font-size: 34upx;
+		width:85%;
+		height:100upx;
+		background:#323241;
+		// box-shadow:0upx 0upx 13upx 0upx #6fffff;
+		border-radius:50upx;
+		line-height: 100upx;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100upx;
+		color: #50505c;
+	}
+	
+	.xieyi{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-size: 30upx;
+		margin-top: 80upx;
+		color: #FFFFFF;
+		text-align: center;
+		height: 40upx;
+		line-height: 40upx;
+	}
+	.xieyi image{
+		width: 40upx;
+		height: 40upx;
+		margin-right: 20rpx;
+	}
