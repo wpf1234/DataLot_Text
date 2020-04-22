@@ -47,25 +47,6 @@
 	export default {
 		onLoad(){
 			tha = this;
-			// 手机app
-			//#ifdef APP-PLUS
-			this.getDeviceInfo();
-			//#endif
-			
-			// H5 或者 微信小程序
-			//#ifdef H5 || MP-WEIXIN
-			uni.getSystemInfo({
-			    success: function (res) {
-			        console.log('model: '+res.model);   // 手机型号
-			        console.log('pixe: '+res.pixelRatio); // 设备像素比
-			        console.log('WindowWidth: '+res.windowWidth);  // 可使用窗口宽度
-			        console.log('WindowHeight: '+res.windowHeight); // 可使用窗口高度
-			        console.log('language: '+res.language);  // 应用设置的语言
-			        console.log('version: '+res.version);   // 应用版本号
-			        console.log('platform: '+res.platform);  // 客户端平台
-			    }
-			});
-			//#endif
 		},
 		onUnload(){
 			clearInterval(js)
@@ -80,8 +61,6 @@
 				xieyi:true,
 				showPassword:false,
 				second:0,
-				meid: '',
-				phone_desc:''
 			};
 		},
 		computed:{
@@ -98,16 +77,7 @@
 			}
 		},
 		methods: {
-			getDeviceInfo(){
-				plus.device.getInfo({
-					success:function(e){
-						console.log('getDeviceInfo success: '+JSON.stringify(e));
-					},
-					fail:function(e){
-						console.log('getDeviceInfo failed: '+JSON.stringify(e));
-					}
-				});
-			},
+			
 			display() {
 			    this.showPassword = !this.showPassword
 			},
